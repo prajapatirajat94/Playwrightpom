@@ -8,12 +8,14 @@ import org.testng.annotations.BeforeTest;
 import com.microsoft.playwright.Page;
 import com.qa.opencart.factory.PlaywrightFactory;
 import com.qa.opencart.homepage.HomePage;
+import com.qa.opencart.homepage.LoginPage;
 
 public class BaseTest {
 	PlaywrightFactory pf;
 	 Page page;
 	protected HomePage homepage;
 	protected Properties prop;
+	protected LoginPage loginpage;
 
 	@BeforeTest
 	public void setup() {
