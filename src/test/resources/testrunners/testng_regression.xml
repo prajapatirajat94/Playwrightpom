@@ -4,16 +4,26 @@
 <listeners>
 <listener class-name="com.qa.opencart.listeners.ExtentReportListener"></listener>
 </listeners>	
-<test name="Opencart Homepage test" > 		
+
+<test name="Opencart Homepage test_chrome" > 	
+<parameter name="browser" value="chrome" />
 <classes> 			
 <class name="com.qa.opencart.tests.HomePageTest" /> 		
 </classes> 
 	</test> 
 
-<test name="Opencart Loginpage test" > 		
+<test name="Opencart Loginpage test_safari" > 	
+<parameter name="browser" value="safari" />	
 <classes> 			
 <class name="com.qa.opencart.tests.LoginPageTest" /> 		
 </classes> 
 	</test> 	
+	
+<test name="Opencart Homepage test_chromium" > 	
+<parameter name="browser" value="chromium" />
+<classes> 			
+<class name="com.qa.opencart.tests.HomePageTest" /> 		
+</classes> 
+	</test> 
 		
 </suite>

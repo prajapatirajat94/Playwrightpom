@@ -22,7 +22,7 @@ public String LoginPageTitle() {
 	return page.title();
 }
 
-public boolean ForgetPasswordLinkExist() {
+public boolean ForgetPasswordLinkExist()  {
 	System.out.println(page.textContent(ForgotPassword));
 	return page.isVisible(ForgotPassword);
 }

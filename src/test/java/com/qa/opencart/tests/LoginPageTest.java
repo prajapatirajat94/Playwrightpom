@@ -10,7 +10,7 @@ import ConstantUtilities.AppConstants;
 public class LoginPageTest extends BaseTest {
 
 @Test(priority = 1)
-public void LoginPagenavigationTest(){
+public void LoginPagenavigationTest() {
 	loginpage =homepage.navigatetologinpage();
 	String actloginpagetitle=loginpage.LoginPageTitle();
 	Assert.assertEquals(actloginpagetitle, AppConstants.LOGIN_PAGE_TITLE);
